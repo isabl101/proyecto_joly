@@ -1,0 +1,31 @@
+/*listado*/
+* {
+    background: #fde6d7;
+}
+
+#botonCrear{
+    background-color: #cb556f;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#botonCrear:hover{
+    background:linear-gradient(transparent, #cb556f);
+    color: #000;
+    border:none;
+}
+
+#botonEditar{
+    background-color: #ba81ef;
+    color: #fff;
+}
+
+#botonEliminar{
+    background-color: #efa267;
+    color: #fff;
+}
+
+thead{
+    font-weight: bold;
+}

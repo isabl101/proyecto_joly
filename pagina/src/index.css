@@ -29,3 +29,26 @@
 thead{
     font-weight: bold;
 }
+
+/*formulario*/
+
+.formProductos{
+    padding: 20px;
+    background-color: #efa267;
+    margin: 10%;
+}
+
+.inputForm{
+    display: flex;
+    width: 50%;
+    margin: 15px;
+}
+
+#botonCancelar{
+    background-color: #ba81ef;
+    width: 250px;
+}
+
+#botonActualizar{
+    background-color: #ba81ef;
+}

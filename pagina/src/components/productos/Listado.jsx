@@ -46,14 +46,14 @@ const Listado = () => {
               <td>{producto.fechaVencimiento}</td>
               <td>
                 <button onClick={()=> eliminarProducto(producto.id) } id="botonEliminar" className="btn form-control">Eliminar</button>
-                <Link to={`/editar/${producto.id}`} id="botonEditar" className="btn form-control" >Editar</Link>
+                <Link to={`/editarProducto/${producto.id}`} id="botonEditar" className="btn form-control" >Editar</Link>
               </td>
             </tr>
           ))}
         </tbody>
       </table>
       <div className="d-grid gap-2 col-6 mx-auto">
-      <Link to={'/crear'} id="botonCrear" className="btn form-control mt-2" >Crear Producto</Link>
+      <Link to={'/crearProducto'} id="botonCrear" className="btn form-control mt-2" >Crear Producto</Link>
       </div>
     </section>
   );

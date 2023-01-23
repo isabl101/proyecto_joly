@@ -9,6 +9,7 @@ const Crear = () => {
   const [descripcion, setDescripcion] = useState("");
   const [valor, setValor] = useState("");
   const [cantidad, setCantidad] = useState("");
+  const [fechaVencimiento, setfechaVencimiento] = useState("");
   const navigate = useNavigate();
 
   const crearProducto = async (e) => {
@@ -21,7 +22,7 @@ const Crear = () => {
       fechaVencimiento,
     };
     await axios.post(urlProductos, producto);
-    navigate('/productos')
+    navigate('/listadoProducto')
   };
 
   return (
@@ -58,8 +59,8 @@ const Crear = () => {
               type="text"
             />
             <input
-              onChange={(e) => setFechaVencimiento(e.target.value)}
-              value={FechaVencimiento}
+              onChange={(e) => setfechaVencimiento(e.target.value)}
+              value={fechaVencimiento}
               placeholder="Fecha de Vencimiento"
               className="form-control"
               type="text"
@@ -67,7 +68,7 @@ const Crear = () => {
           </section>
         </section>
         <section className="row">
-          <Link to={"/productos"} className="btn btn-danger form-control">
+          <Link to={"/listadoProductos"} className="btn btn-danger form-control">
             Cancelar
           </Link>
           <button onClick={crearProducto} className="btn btn-success form-control">Guardar</button>

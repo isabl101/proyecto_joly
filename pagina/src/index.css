@@ -1,54 +1,105 @@
-/*listado*/
 * {
-    background: #fde6d7;
-}
-
-#botonCrear{
-    background-color: #cb556f;
-    color: #fff;
-    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /*formulario*/
+  .form-register {
+    width: 400px;
+    background: linear-gradient(#f4d8e4, #D56296) ;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: #515151 ;
+    box-shadow: 7px 13px 37px #000;
+  }
+  
+  .form-register h4 {
+    font-size: 40px;
     font-weight: bold;
-}
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .controls {
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: none;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: #515151;
+    outline: none;
+  }
 
-#botonCrear:hover{
-    background:linear-gradient(transparent, #cb556f);
-    color: #000;
-    border:none;
-}
+  .controls:focus {
+    box-shadow: -1px 1px 15px 3px #980044;
+  }
+  
+  .form-register .botons {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
 
-#botonEditar{
-    background-color: #ba81ef;
-    color: #fff;
-}
-
-#botonEliminar{
-    background-color: #efa267;
-    color: #fff;
+/*listado*/
+table {
+    border: 10px solid;
 }
 
 thead{
     font-weight: bold;
+    text-align: center;
 }
 
-/*formulario*/
-
-.formProductos{
-    padding: 20px;
-    background-color: #efa267;
-    margin: 10%;
+tbody{
+    text-align: center;
 }
 
-.inputForm{
-    display: flex;
-    width: 50%;
-    margin: 15px;
+#botonCrear{
+    background-color: #EFAD64;
+    color: #fff;
+    height: 64px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 25px;
 }
 
-#botonCancelar{
-    background-color: #ba81ef;
-    width: 250px;
+#botonCrear:hover{
+    box-shadow: 7px 13px 37px #000;
+    outline: none;
+    border: none;
 }
 
-#botonActualizar{
-    background-color: #ba81ef;
+#botonEliminar{
+    background: #F2EFEB;
+    color:red;
+    font-weight: bold;
+    border: none;
+    margin-bottom: 10px;
+}
+#botonEliminar:hover{
+    background:linear-gradient(#000,red);
+    color:#F2EFEB;
+}
+
+
+#botonEditar{
+    background:#F2EFEB;
+    color:#4BAF33;
+    font-weight: bold;
+    border: none;
+}
+#botonEditar:hover{
+background:linear-gradient(#000,#4BAF33);
+color:#F2EFEB;
 }

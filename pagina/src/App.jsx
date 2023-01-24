@@ -18,7 +18,7 @@ const router = createBrowserRouter([
   },
   
   {
-    path: '/editarProducto',
+    path: '/editarProducto/:id',
     element: <Editar />,
     errorElement: <Error404 />
   }

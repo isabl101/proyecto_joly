@@ -40,48 +40,54 @@ const Editar = () => {
     }, [])
 
     return (
-            <form className="formProductos">
-                <input
-                    onChange={(e) => setNombre(e.target.value)}
-                    value={nombre}
-                    placeholder="Nombre"
-                    className="inputForm"
-                    type="text"
-                />
-                <input
-                    onChange={(e) => setDescripcion(e.target.value)}
-                    value={descripcion}
-                    placeholder="Descripción"
-                    className="inputForm"
-                    type="text"
-                />
-                <input
-                    onChange={(e) => setValor(e.target.value)}
-                    value={valor}
-                    placeholder="Valor"
-                    className="inputForm"
-                    type="text"
-                />
-                <input
-                    onChange={(e) => setCantidad(e.target.value)}
-                    value={cantidad}
-                    placeholder="Cantidad"
-                    className="inputForm"
-                    type="text"
-                />
-                <input
-                    onChange={(e) => setfechaVencimiento(e.target.value)}
-                    value={fechaVencimiento}
-                    placeholder="Fecha de Vencimiento"
-                    className="inputForm"
-                    type="text"
-                />
+        <section className="form-register">
+            <h4>Actualizar Producto</h4>
+            <input
+                className="controls"
+                onChange={(e) => setNombre(e.target.value)}
+                value={nombre}
+                type="text"
+                //id="nombre"
+                placeholder="Nombre del producto"
+            />
+            <input
+                className="controls"
+                onChange={(e) => setDescripcion(e.target.value)}
+                value={descripcion}
+                type="text"
+                //id="descripcion"
+                placeholder="Descripción"
+            />
+            <input
+                className="controls"
+                onChange={(e) => setValor(e.target.value)}
+                value={valor}
+                type="text"
+                //id="valor" 
+                placeholder="Valor"
+            />
+            <input
+                className="controls"
+                type="text"
+                onChange={(e) => setCantidad(e.target.value)}
+                value={cantidad}
+                //id="cantidad" 
+                placeholder="Cantidad"
+            />
+            <input
+                className="controls"
+                onChange={(e) => setfechaVencimiento(e.target.value)}
+                value={fechaVencimiento}
+                type="date"
+                //id="fechaVencimiento"
+                placeholder="Fecha de Vencimiento"
+            />
 
-                <Link to={"/listadoProducto"} id="botonCancelar" className="btn form-control">
-                    Cancelar
-                </Link>
-                <button onClick={actualizarProducto} id="botonActualizar" className="btn form-control">Actualizar</button>
-            </form>
+            <Link to={"/listadoProducto"} className="btn btn-danger form-control mb-2">
+                Cancelar
+            </Link>
+            <button onClick={actualizarProducto} className="btn btn-primary form-control">Actualizar</button>
+        </section>
     );
 };
 

@@ -25,7 +25,7 @@ const Listado = () => {
   return (
     <section className="container mt-6 p-5">
         <h1 className="text-center m-5">PRODUCTOS</h1>
-      <table className="table table-light text-center">
+      <table className="table table-danger table-striped">
         <thead className="bg bg-secondary">
           <tr>
             <td>Nombre</td>
@@ -60,3 +60,4 @@ const Listado = () => {
 };
 
 export default Listado;
+

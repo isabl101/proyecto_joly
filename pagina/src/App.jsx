@@ -3,8 +3,15 @@ import Error404 from "./components/helpers/Error404"
 import Crear from "./components/productos/Crear"
 import Editar from './components/productos/Editar'
 import Listado from './components/productos/Listado'
+import Inicio from './components/home/Inicio'
 
 const router = createBrowserRouter([
+  {
+    path:'/',
+    element:<Inicio />,
+    errorElement:<Error404 />
+  },
+
   {
     path:'/listadoProducto',
     element:<Listado />,

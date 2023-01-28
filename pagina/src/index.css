@@ -43,7 +43,7 @@
   
   .form-register .botons {
     width: 100%;
-    background: #1f53c5;
+    background: #59ACD8;
     border: none;
     padding: 12px;
     color: white;
@@ -102,4 +102,66 @@ tbody{
 #botonEditar:hover{
 background:linear-gradient(#000,#4BAF33);
 color:#F2EFEB;
+}
+
+/*navbar*/
+.navegacion{
+  border-bottom: 3px solid #154964 ;
+  background-color: #ffffff;
+  list-style: none;
+  color: #000;
+}
+
+.navItem{
+  background-color: #AFDBF2 ;
+  margin: 0 5px;
+  border-radius: 30px;
+  color: #fff;
+  list-style: none;
+}
+
+.presentacion img{
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  box-shadow: 22px 31px 0px -3px  #AFDBF2;
+}
+
+.presentacion img:hover{
+  box-shadow: 30px -31px 0px -3px  #AFDBF2;
+  transition-duration: 1s;
+}
+
+#infor, #vision, #mision{
+  border: none;
+}
+
+#infor:hover, #vision:hover, #mision:hover{
+  border-bottom: 4px solid #154964 ;
+  font-weight: bold;
+}
+
+/*galeria*/
+
+.galeria{
+  display: flex;
+  width:90%;
+  height: 430px;
+  margin-top: 50px;
+  margin-left: 6%;
+}
+
+.galeria img{
+  width: 0;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .9;
+  transition: .5;
+}
+.galeria img:hover{
+  cursor:crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+  transition-duration: 1s;
 }

@@ -1,20 +1,22 @@
+import { Link } from "react-router-dom"
+
 const Header = () => {
   return (
     <section className="navegacion">
       <nav className="navbar bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <Link to={'/'} className="navbar-brand">
             JolyApp
-          </a>
+          </Link>
           <ul className="nav justify-content-end">
             <li className="navItem">
-              <a className="nav-link" href="#">Clientes</a>
+              <Link to ={'/listadoCliente'} className="nav-link">Clientes</Link>
             </li>
             <li className="navItem">
-              <a className="nav-link" href="#">Productos</a>
+              <Link to={'/listadoProducto'} className="nav-link">Productos</Link>
             </li>
             <li className="navItem">
-              <a className="nav-link" href="#">Proveedores</a>
+              <Link to={'/listadoProveedor'} className="nav-link" href>Proveedores</Link>
             </li>
           </ul>
         </div>

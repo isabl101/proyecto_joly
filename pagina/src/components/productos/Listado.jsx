@@ -1,7 +1,8 @@
 import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import Header from '../home/Header'
 const urlProductos = "http://localhost:3100/productos";
 
 const Listado = () => {
@@ -23,10 +24,11 @@ const Listado = () => {
   }
 
   return (
-    <section className="container mt-6 p-5">
-        <h1 className="text-center m-5">PRODUCTOS</h1>
-      <table className="table table-danger table-striped">
-        <thead className="bg bg-secondary">
+    <section className="container-fluid p">
+      <Header />
+      <h1 className="producto">LISTADO DE PRODUCTOS</h1>
+      <table className="table table-secondary table-striped">
+        <thead>
           <tr>
             <td>Nombre</td>
             <td>Descripción</td>
@@ -45,7 +47,7 @@ const Listado = () => {
               <td>{producto.cantidad}</td>
               <td>{producto.fechaVencimiento}</td>
               <td>
-                <button onClick={()=> eliminarProducto(producto.id) } id="botonEliminar" className="btn form-control">Eliminar</button>
+                <button onClick={() => eliminarProducto(producto.id)} id="botonEliminar" className="btn form-control">Eliminar</button>
                 <Link to={`/editarProducto/${producto.id}`} id="botonEditar" className="btn form-control" >Editar</Link>
               </td>
             </tr>
@@ -53,7 +55,7 @@ const Listado = () => {
         </tbody>
       </table>
       <div className="d-grid gap-2 col-6 mx-auto">
-      <Link to={'/crearProducto'} id="botonCrear" className="btn form-control mt-2" >Crear Producto</Link>
+        <Link to={'/crearProducto'} id="botonCrear" className="btn form-control mt-2" >Crear Producto</Link>
       </div>
     </section>
   );

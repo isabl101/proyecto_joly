@@ -4,7 +4,7 @@ import axios from "axios";
 import { useState } from "react";
 const urlClientes = "http://localhost:3100/clientes";
 
-const Crear = () => {
+const CrearClientes = () => {
     const [documento, setDocumento] = useState("");
     const [nombre, setNombre] = useState("");
     const [apellido, setApellido] = useState("");
@@ -108,4 +108,4 @@ const Crear = () => {
     );
 };
 
-export default Crear;
+export default CrearClientes;

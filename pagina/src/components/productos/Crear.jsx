@@ -73,6 +73,7 @@ const Crear = () => {
         Cancelar
       </Link>
       <button onClick={crearProducto} className="btn btn-primary form-control">Guardar</button>
+  
     </section>
   );
 };

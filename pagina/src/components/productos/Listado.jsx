@@ -24,7 +24,7 @@ const Listado = () => {
   }
 
   return (
-    <section className="container-fluid p">
+    <section className="container-fluid">
       <Header />
       <h1 className="producto">LISTADO DE PRODUCTOS</h1>
       <table className="table table-secondary table-striped">

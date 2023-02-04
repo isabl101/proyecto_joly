@@ -9,6 +9,7 @@ import CrearCliente from './components/clientes/CrearCliente'
 import EditarCliente from './components/clientes/EditarCliente'
 import ListarProveedor from './components/proveedor/ListarProveedor'
 import CrearProveedor from './components/proveedor/CrearProveedor'
+import EditarProveedor from './components/proveedor/EditarProveedor'
 
 const router = createBrowserRouter([
   {
@@ -62,6 +63,12 @@ const router = createBrowserRouter([
   {
     path: '/crearProveedor',
     element: <CrearProveedor />,
+    errorElement: <Error404 />
+  },
+
+  {
+    path: '/editarProveedor/:id',
+    element: <EditarProveedor />,
     errorElement: <Error404 />
   }
 

@@ -15,19 +15,19 @@ const Cliente = dataBase.define('clientes', {
     type: Sequelize.INTEGER
   },
   correo: {
-    type: Sequelize.DATE
+    type: Sequelize.STRING
   },
   correo: {
-    type: Sequelize.DATE
+    type: Sequelize.STRING
   },
   barrio: {
-    type: Sequelize.INTEGER
+    type: Sequelize.STRING
   },
   direccion: {
-    type: Sequelize.INTEGER
+    type: Sequelize.STRING
   },
   Foto: {
-    type: Sequelize.INTEGER
+    type: Sequelize.STRING
   }
 })
 

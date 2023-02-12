@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-
+import Logo from '../home/img/logo.png'
 const Header = () => {
   return (
     <section className="navegacion">
@@ -7,6 +7,7 @@ const Header = () => {
         <div className="container-fluid">
           <Link to={'/'} className="navbar-brand">
             JolyApp
+            <img src={Logo} width={50} alt="" />
           </Link>
           <ul className="nav justify-content-end">
             <li className="navItem">

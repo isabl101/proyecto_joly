@@ -13,10 +13,10 @@ const Footer = () => {
                 </div>
                 <div className="box">
                     <h2>SOBRE NOSOTROS</h2>
-                    <p>Contactenos</p>
-                    <p>Preguntas frecuentes</p>
-                    <p>Blog</p>
-                    <p>Quejas y peticiones</p>
+                    <a href='#'><p>Contactenos</p></a>
+                    <a href='#'><p>Preguntas frecuentes</p></a>
+                    <a href='#'><p>Blog</p></a>
+                    <a href='#'><p>Quejas y peticiones</p></a>
                 </div>
                 <div className="box">
                     <h2>SIGUENOS</h2>

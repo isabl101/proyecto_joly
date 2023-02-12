@@ -15,16 +15,16 @@ const Proveedor = dataBase.define('proveedores', {
     type: Sequelize.INTEGER
   },
   correo: {
-    type: Sequelize.STRING
+    type: Sequelize.DATE
   },
   correo: {
-    type: Sequelize.STRING
+    type: Sequelize.DATE
   },
   direccion: {
-    type: Sequelize.STRING
+    type: Sequelize.INTEGER
   },
   logo: {
-    type: Sequelize.STRING
+    type: Sequelize.INTEGER
   }
 })
 

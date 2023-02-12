@@ -9,10 +9,10 @@ const Producto = dataBase.define('productos', {
     type: Sequelize.STRING
   },
   valor: {
-    type: Sequelize.VARCHAR
+    type: Sequelize.INTEGER
   },
   cantidad: {
-    type: Sequelize.REAL
+    type: Sequelize.INTEGER
   },
   fechaVencimiento: {
     type: Sequelize.DATE

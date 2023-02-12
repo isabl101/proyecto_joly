@@ -136,6 +136,10 @@ tbody {
   list-style: none;
 }
 
+.navItem:hover{
+  background-color: #E3EAEB;
+}
+
 .presentacion img {
   width: 450px;
   height: 450px;
@@ -300,8 +304,14 @@ tbody {
   font-size: 20px;
   font-weight: bold;
 }
-.pie-pagina .grupo-1 .box p{
+.pie-pagina .grupo-1 .box a{
   color: #515151;
+  text-decoration: none;
+}
+.pie-pagina .grupo-1 .box a:hover{
+  color: #000000;
+  font-size: 15px;
+  font-weight: bold;
 }
 .pie-pagina .grupo-1 .red-social a{
   display: inline-block;
